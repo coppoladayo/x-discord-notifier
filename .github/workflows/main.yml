@@ -1,5 +1,8 @@
 name: X Discord Notifier
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "*/30 * * * *"
