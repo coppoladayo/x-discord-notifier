@@ -72,8 +72,7 @@ def main():
         feed_title = feed.feed.get("title", "X公式")
         post_title = latest.get("title", "新しい投稿")
         link = latest.get("link", feed_url)
-        entry_id = latest.get("id") or link
-
+        entry_id = link
         if sent.get(feed_url) == entry_id:
             print("新着なし:", feed_title)
             continue
